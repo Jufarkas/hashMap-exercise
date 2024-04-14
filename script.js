@@ -16,7 +16,6 @@ class HashMap {
     constructor(){
      this.array = new Array(16); // create new Array and set to size 16: [0 - 15] (works with our modulo that we do on our hashCode, as 'num' % 16 will always return a num between 0 to 15)
      this.currentLength = 0;
-     this.loadFactor = 0.8;
     }
 
     hash(key){ // takes a (key) and produces a hash code (DONE)
@@ -171,8 +170,6 @@ class HashMap {
 
 let hash = new HashMap();
 
-// hash.hash('Bob');
-// console.log(hash.hash('Bill'));
 hash.set("Billy", "The Billster");
 
 hash.set("Jamm", "Test One");     // same hashCode
